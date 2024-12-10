@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Converter</title>
+  <link rel="stylesheet" href="konversi.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Konversi Mata Uang</h1>
+    <div class="converter">
+      <div class="input-group">
+        <label for="amount">Jumlah:</label>
+        <input type="number" id="amount" placeholder="Masukkan Jumlah">
+      </div>
+      <div class="input-group">
+        <label for="fromCurrency">Dari:</label>
+        <select id="fromCurrency">
+          <option value="USD">USD</option>
+          <option value="IDR">IDR</option>
+          <option value="EUR">EUR</option>
+          <option value="JPY">JPY</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="toCurrency">Ke:</label>
+        <select id="toCurrency">
+          <option value="USD">USD</option>
+          <option value="IDR">IDR</option>
+          <option value="EUR">EUR</option>
+          <option value="JPY">JPY</option>
+        </select>
+      </div>
+      <button id="convertBtn">Konversi</button>
+      <div class="result">
+        <h2>Jumlah Yang di Konversi:</h2>
+        <p id="result">--</p>
+      </div>
+    </div>
+  </div>
+  <script src="konversi.js"></script>
+</body>
+</html>
